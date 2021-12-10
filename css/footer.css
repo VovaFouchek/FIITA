@@ -1,0 +1,130 @@
+.footer {
+  background: rgba(25, 24, 37, 1);
+  padding: 2% 0 1% 0%;
+}
+
+.footer::before {
+  background: inherit;
+  content: '';
+  display: block;
+  height: 50%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  transform: skewY(4deg);
+  transform-origin: 100%;
+  z-index: -1;
+}
+
+.footer-upper__box {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-bottom: 50px;
+}
+
+.footer-box__logo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.footer-logo__text {
+  padding-left: 20px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: 0.14em;
+  color: #fff;
+  cursor: pointer;
+}
+
+.footer-line {
+  border: 1px solid rgba(255, 255, 255, 0.25);
+}
+
+.footer-box__social {
+  width: 100px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-main-content {
+  margin-top: 3%;
+  margin-bottom: 7%;
+}
+
+.main-content__box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.content-box__iteam p {
+  color: #fff;
+}
+
+.footer-text {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 0.05em;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.footer-text a {
+  text-align: center;
+  text-decoration: none;
+  color: rgb(179 179 179);
+  transition: 0.3s;
+}
+
+.footer-text a:hover {
+  color: rgba(255, 255, 255, 0.8);
+  transform: scale(1.08);
+}
+
+.footer-logo__icon {
+  transition: all 0.4s;
+}
+
+.footer-logo__icon:hover {
+  transform: scale(1.08);
+}
+
+.lower-content__box {
+  text-align: center;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.lower-content__box p {
+  padding-bottom: 10px;
+  font-weight: 400;
+}
+
+.lower-content__box .link {
+  text-decoration-line: underline;
+  font-weight: 600;
+}
+
+.footer-text p {
+  margin-bottom: 25px;
+}
+
+.list {
+  margin-bottom: 0;
+}
+
+.box-contact {
+  display: flex;
+  align-content: center;
+}
+
+.box-contact p {
+  margin-top: 6px;
+  padding-left: 12px;
+}
+

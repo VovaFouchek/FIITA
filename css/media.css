@@ -1,0 +1,475 @@
+@media (max-width: 1440px) {
+  .container {
+    max-width: 1124px;
+  }
+
+  .info {
+    margin-top: 80px;
+    justify-content: center;
+  }
+
+  .info-item {
+    margin: 0 20px 50px 20px;
+  }
+
+  .education-column {
+    max-width: 435px;
+  }
+}
+/*for picture company*/
+
+@media (max-width: 1350px) {
+  .work-column__image.img-1 {
+    margin-right: 350px;
+  }
+
+  .work-column__image.img-2 {
+    margin-left: 175px;
+  }
+
+  .work-column__image.img-3 {
+    margin-right: 340px;
+  }
+
+  .work-column__image.img-4 {
+    margin-left: 250px;
+  }
+
+  .work-column__image.img-5 {
+    margin-right: 460px;
+    margin-top: -55px;
+  }
+}
+
+@media (max-width: 1199px) {
+  .wedo-item.left {
+    width: 38%;
+  }
+
+  .wedo-item.right {
+    width: 62%;
+  }
+}
+
+@media (max-width: 1024px) {
+  .container {
+    max-width: 868px;
+  }
+
+  .header-container {
+    max-width: 880px;
+    padding: 0 34px;
+  }
+
+  h1 {
+    max-width: 868px;
+    font-size: 53px;
+  }
+
+  .about .main-text {
+    max-width: 757px;
+  }
+
+  .tecnology .section-title {
+    margin-bottom: 50px;
+  }
+
+  .wedo-item {
+    width: 100%;
+  }
+
+  .wedo-item.left {
+    width: 100%;
+  }
+
+  .wedo-item.right {
+    width: 100%;
+  }
+
+  .work-column {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .accordion-header {
+    max-width: 945px;
+  }
+
+  .footer .container {
+    max-width: 1295px;
+    padding: 0 30px;
+  }
+}
+
+@media (max-width: 991px) {
+  .work-column__container {
+    flex-direction: column;
+  }
+
+  .work-column.images {
+    margin-top: 60px;
+  }
+
+  .work-column__image {
+    margin-bottom: 30px;
+  }
+
+  .work-column__image.img-1 {
+    margin-right: 50%;
+  }
+
+  .work-column__image.img-2 {
+    margin-left: 50%;
+    margin-top: -55px;
+  }
+
+  .work-column__image.img-3 {
+    margin-right: 30%;
+    margin-top: -55px;
+  }
+
+  .work-column__image.img-4 {
+    margin-left: 55%;
+    margin-top: -55px;
+  }
+
+  .work-column__image.img-5 {
+    margin-right: 56%;
+    margin-top: -55px;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) { /*laptop*/
+  .menu {
+    padding: 3%;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+  :root {
+    --main-title: 49px;
+  }
+
+  .specialties-column {
+    width: 85%;
+  }
+
+  .questions-title {
+    font-size: 55px;
+    margin-left: 22px;
+  }
+
+  .education {
+    margin-bottom: 100px;
+  }
+
+  .work-column__container {
+    flex-direction: column;
+  }
+
+  .work-column {
+    width: 100%;
+  }
+
+  .specialties {
+    margin-bottom: 100px;
+  }
+
+  .education-column {
+    width: 75%;
+    margin-bottom: 50px;
+  }
+
+  .education-column__title {
+    text-align: center;
+    font-size: 35px;
+  }
+
+  .menu {
+    padding: 4%;
+    width: 360px;
+  }
+
+  .wedo {
+    flex-direction: column;
+  }
+
+  .wedo-item {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .education-column {
+    margin: 0;
+    margin-bottom: 50px;
+  }
+
+  h1 {
+    font-size: 45px;
+  }
+}
+
+@media (max-width: 575px) {
+  .container {
+    padding: 0 15px;
+    max-width: 100%;
+  }
+
+  .header-container {
+    padding: 0 15px;
+  }
+
+  h1 {
+    font-size: 39px;
+    line-height: 110.19%;
+    text-align: center;
+  }
+
+  .custom-button {
+    margin: 0 auto;
+    margin-top: 8%;
+  }
+
+  .nav__link {
+    display: none;
+    margin: 0;
+    padding: 8px 20px;
+  }
+
+  .work-column__image.img-1,
+  .work-column__image.img-2,
+  .work-column__image.img-3,
+  .work-column__image.img-4,
+  .work-column__image.img-5 {
+    margin: 0;
+    margin-bottom: 40px;
+  }
+
+  .small-button {
+    font-size: 17px;
+  }
+}
+
+@media (max-width: 480px) {
+  .section-title {
+    font-weight: 600;
+    font-size: 36px;
+  }
+
+  .header-subtitle {
+    width: 100%;
+    font-size: 17px;
+  }
+
+  .nav-bar li:nth-of-type(1) {
+    display: none;
+  }
+
+  .nav-bar li:nth-of-type(2) {
+    display: none;
+  }
+
+  .nav-bar li:last-child {
+    margin-top: 14%;
+  }
+
+  .basic-title {
+    font-size: 43px;
+  }
+
+  .work-column__container {
+    flex-direction: column;
+  }
+
+  .work-column {
+    width: 100%;
+    display: flex;
+    align-items: center;
+  }
+
+  .work-column__image {
+    margin-bottom: 12%;
+  }
+
+  .education-column {
+    width: 100%;
+    margin: 0;
+    margin-bottom: 16%;
+  }
+
+  .education-column__title {
+    text-align: center;
+    padding-top: 6%;
+  }
+
+  .nav__link {
+    display: none;
+    margin: 0;
+    padding: 8px 20px;
+  }
+
+  .specialties-column {
+    width: 100%;
+    margin: 0;
+    padding: 5%;
+    margin-bottom: 50px;
+  }
+
+  .main-content__box {
+    flex-direction: column;
+  }
+
+  .tecnology {
+    margin-bottom: 50px;
+  }
+
+  .specialties {
+    margin-bottom: 50px;
+  }
+
+  .education {
+    padding-bottom: 50px;
+  }
+
+  .work {
+    padding: 18% 0 18% 0%;
+    transform: skewY(10deg);
+  }
+
+  .container.beveled-container {
+    transform: skewY(-10deg);
+  }
+
+  .questions {
+    transform: skewY(10deg);
+    padding: 18% 0 22% 0%;
+  }
+
+  .wedo {
+    margin: 0;
+    flex-direction: column;
+  }
+
+  .wedo-item {
+    width: 100%;
+  }
+
+  .accordion-header {
+    padding: 15px 43px 15px 0;
+  }
+
+  .accordion-content {
+    padding: 15px 0;
+  }
+
+  .custom-line {
+    margin-left: 3px;
+  }
+
+  .education-column__subtitle ul {
+    padding-left: 9%;
+  }
+
+  .specialties-button {
+    right: 8%;
+    width: 85%;
+    left: 8%;
+    padding: 8px;
+  }
+
+  .footer-box__social {
+    width: 35%;
+    justify-content: space-between;
+  }
+
+  .footer-upper__box {
+    flex-direction: column;
+    padding-bottom: 25px;
+  }
+
+  .footer-box__logo {
+    padding-bottom: 10%;
+  }
+
+  .menu {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    padding: 82px 30px;
+    border-radius: 0;
+    top: 0;
+    right: 0;
+    background-color: rgb(255 255 255);
+    box-shadow: 0px 24px 45px 2px rgb(80 106 156 / 32%);
+    z-index: 100;
+    overflow: hidden;
+  }
+
+  .specialties-text__main ul {
+    padding-left: 8%;
+  }
+
+  body.lock {
+    overflow: hidden;
+  }
+
+  .main-text {
+    font-size: 21px;
+  }
+
+  .about-box {
+    margin-top: 50px;
+  }
+
+  .specialties-container {
+    margin-top: 50px;
+  }
+
+  .about-box .box__card {
+    padding-bottom: 30px;
+  }
+
+  .tecnology .section-title {
+    margin-bottom: 30px;
+  }
+
+  .info {
+    margin-top: 50px;
+  }
+
+  .info-item {
+    margin: 0 15px 30px 15px;
+  }
+
+  .work {
+    margin-bottom: 100px;
+  }
+
+  .specialties .main-text {
+    font-size: 18px;
+  }
+
+  .questions {
+    margin-bottom: 100px;
+  }
+
+  .education-container {
+    margin-top: 50px;
+  }
+}
+
+@media (max-width: 375px) {
+  h1 {
+    font-size: 32px;
+    line-height: 105.19%;
+  }
+
+  .section-title {
+    font-size: 32px;
+  }
+
+  .footer .menu-text {
+    font-size: 17px;
+  }
+}
