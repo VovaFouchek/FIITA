@@ -140,7 +140,8 @@
   margin-right: 310px;
   margin-top: -14px;
 }
-.work-column__image.img-3:hover{
+
+.work-column__image.img-3:hover {
   background: url(../images/logo-playtika-color.svg) no-repeat center;
   transition: 0.3s;
 }
@@ -153,7 +154,6 @@
   transition: 0.2s;
   margin-left: 425px;
 }
-
 
 .work-column__image.img-5 {
   width: 204px;
@@ -170,6 +170,76 @@
 /*-------------------------------------------------
 # specialties Section
 --------------------------------------------------*/
+.slider {
+  min-width: 0;
+}
+
+.slider__item {
+  margin: 30px 20px;
+  transition: 0.5s;
+}
+
+.slick-slider {
+}
+
+.slick-list {
+  overflow: hidden;
+}
+
+.slick-track {
+  display: flex;
+  margin-top: 25px;
+}
+
+.slick-active {
+  margin: 0 20px;
+  transition: 0.5s;
+}
+
+.slick-arrow {
+  font-size: 0;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: #fff;
+  border: 0;
+  box-shadow: 0px 24px 45px 2px rgb(80 106 156 / 10%);
+  position: absolute;
+  z-index: 15;
+  outline: none;
+  cursor: pointer;
+}
+
+.slick-prev {
+  right: 15.5%;
+  top: -5%;
+}
+
+.slick-next {
+  right: 8.5%;
+  top: -5%;
+}
+
+.slick-prev::after {
+  content: '';
+  position: absolute;
+  background: url(../images/slick-prev.svg) no-repeat;
+  width: 25px;
+  top: 23px;
+  right: 27px;
+  height: 40px;
+}
+
+.slick-next::after {
+  content: '';
+  position: absolute;
+  background: url(../images/slick-next.svg) no-repeat;
+  width: 25px;
+  top: 23px;
+  right: 22px;
+  height: 40px;
+}
+
 .specialties {
   margin-bottom: 200px;
 }
@@ -185,11 +255,94 @@
   width: 100%;
   display: flex;
   flex-direction: column;
-  margin: 50px;
+  /*margin: 50px;*/
   padding: 4%;
   border-radius: 25px;
   background-color: #fee8e8;
   box-shadow: 0px 24px 45px 2px rgb(80 106 156 / 32%);
+  min-width: 0;
+  max-width: 1250px;
+  margin: 0 auto;
+}
+
+@media (min-width: 1921px) {
+  .specialties-column {
+    max-width: 1250px;
+  }
+
+  .slider__item {
+    margin: 30px 100px;
+    transition: 0.5s;
+  }
+
+  .slick-active {
+    margin: 0 100px;
+    transition: 0.5s;
+  }
+}
+
+@media (max-width: 1920px) {
+  .specialties-column {
+    max-width: 1250px;
+  }
+
+  .slider__item {
+    margin: 30px 80px;
+    transition: 0.5s;
+  }
+
+  .slick-active {
+    margin: 0 80px;
+    transition: 0.5s;
+  }
+}
+
+@media (max-width: 1600px) {
+  .specialties-column {
+    max-width: 1250px;
+  }
+
+  .slider__item {
+    margin: 30px 50px;
+    transition: 0.5s;
+  }
+
+  .slick-active {
+    margin: 0 50px;
+    transition: 0.5s;
+  }
+}
+
+@media (max-width: 1490px) {
+  .specialties-column {
+    max-width: 1124px;
+  }
+
+  .slider__item {
+    margin: 30px 30px;
+    transition: 0.5s;
+  }
+
+  .slick-active {
+    margin: 0 30px;
+    transition: 0.5s;
+  }
+}
+
+@media (max-width: 1200px) {
+  .specialties-column {
+    max-width: 850px;
+  }
+
+  .slider__item {
+    margin: 30px 20px;
+    transition: 0.5s;
+  }
+
+  .slick-active {
+    margin: 0 20px;
+    transition: 0.5s;
+  }
 }
 
 .specialties-wrap {

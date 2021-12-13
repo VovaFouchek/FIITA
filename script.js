@@ -1,6 +1,16 @@
 
 $(function () {
 
+    $(document).ready(function () {
+        $('.slider').slick({
+            centerMode: true,
+            centerPadding: '60px',
+            slidesToShow: 1,
+            adaptiveHeight: true,
+            variableWidth: true,
+        });
+    });
+
     /* Hidding menu on scroll*/
     if ($(window).width() > 480) {
         $(window).scroll(function () {
