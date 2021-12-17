@@ -3,12 +3,15 @@ $(function () {
 
     $(document).ready(function () {
         $('.slider__company').slick({
-            centerMode: true,
             slidesToShow: 6,
-            slidesToScroll: 1,
+            //slidesToScroll: 2,
             arrows: false,
+            centerMode: true,
             variableWidth: true,
             dots: true,
+            infinity: true,
+            autoplay: true,
+            autoplaySpeed: 2400,
             responsive: [
                 {
                     breakpoint: 1024,
@@ -20,14 +23,14 @@ $(function () {
                     breakpoint: 768,
                     settings: {
                         slidesToShow: 2,
-                        slidesToScroll: 2,
+                        //slidesToScroll: 2,
                     }
                 },
                 {
                     breakpoint: 482,
                     settings: {
                         slidesToShow: 1,
-                        slidesToScroll: 1,
+                        //slidesToScroll: 1,
                         dots: false,
                     }
                 }
