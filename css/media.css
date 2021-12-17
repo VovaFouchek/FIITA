@@ -128,7 +128,7 @@
   }
 
   .education {
-    margin-bottom: 100px;
+    padding-bottom: 100px;
   }
 
   .work-column__container {
@@ -392,6 +392,7 @@
 
   .about-box {
     margin-top: 50px;
+    margin-bottom: 50px;
   }
 
   .specialties-container {
