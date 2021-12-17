@@ -11,7 +11,7 @@ $(function () {
             dots: true,
             infinity: true,
             autoplay: true,
-            autoplaySpeed: 2400,
+            autoplaySpeed: 2500,
             responsive: [
                 {
                     breakpoint: 1024,
