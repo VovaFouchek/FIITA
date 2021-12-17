@@ -1,6 +1,40 @@
 
 $(function () {
 
+    $(document).ready(function () {
+        $('.slider__company').slick({
+            centerMode: true,
+            slidesToShow: 6,
+            slidesToScroll: 1,
+            arrows: false,
+            variableWidth: true,
+            dots: true,
+            responsive: [
+                {
+                    breakpoint: 1024,
+                    settings: {
+                        slidesToShow: 3,
+                    }
+                },
+                {
+                    breakpoint: 768,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 2,
+                    }
+                },
+                {
+                    breakpoint: 482,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1,
+                        dots: false,
+                    }
+                }
+            ]
+        });
+    });
+
     /* Hidding menu on scroll*/
     if ($(window).width() > 480) {
         $(window).scroll(function () {
