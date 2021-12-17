@@ -215,6 +215,10 @@
 }
 
 @media (max-width: 481px) {
+  .top-bar {
+    padding: 10px 0;
+  }
+
   .section-title {
     font-weight: 600;
     font-size: 36px;
@@ -469,5 +473,9 @@
 
   .education-column__title {
     font-size: 26px;
+  }
+
+  .footer-box__social {
+    width: 40%;
   }
 }
