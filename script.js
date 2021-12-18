@@ -1,6 +1,43 @@
 
 $(function () {
 
+    $(document).ready(function () {
+        $('.slider__company').slick({
+            slidesToShow: 6,
+            //slidesToScroll: 2,
+            arrows: false,
+            centerMode: true,
+            variableWidth: true,
+            dots: true,
+            infinity: true,
+            autoplay: true,
+            autoplaySpeed: 2500,
+            responsive: [
+                {
+                    breakpoint: 1024,
+                    settings: {
+                        slidesToShow: 3,
+                    }
+                },
+                {
+                    breakpoint: 768,
+                    settings: {
+                        slidesToShow: 2,
+                        //slidesToScroll: 2,
+                    }
+                },
+                {
+                    breakpoint: 482,
+                    settings: {
+                        slidesToShow: 1,
+                        //slidesToScroll: 1,
+                        dots: false,
+                    }
+                }
+            ]
+        });
+    });
+
     /* Hidding menu on scroll*/
     if ($(window).width() > 480) {
         $(window).scroll(function () {
