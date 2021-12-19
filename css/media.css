@@ -439,7 +439,7 @@
   }
 
   .section-title {
-    font-size: 32px;
+    font-size: 30px;
   }
 
   .main-text {
@@ -485,7 +485,7 @@
   }
 }
 
-@media (min-width:482px) {
+@media (min-width: 482px) {
   .accordion__arrow {
     display: none;
   }
