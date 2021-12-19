@@ -285,7 +285,7 @@
   }
 
   .tecnology {
-    margin-bottom: 50px;
+    margin-bottom: 85px;
   }
 
   .specialties {
@@ -380,7 +380,7 @@
     right: 0;
     background-color: rgb(255 255 255);
     box-shadow: 0px 24px 45px 2px rgb(80 106 156 / 32%);
-    z-index: 100;
+    z-index: 600;
     overflow: hidden;
   }
 

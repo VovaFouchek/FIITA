@@ -39,9 +39,11 @@
             <div class="container top-bar__container">
                 <div class="top-bar__inner">
 
-                    <div class="top-bar__box"><a href="https://fcsa.vntu.edu.ua" target="_blank" rel="noopener"> <img
-                                src="./images/logo.svg" class="logo-icon" width="38" height="38" alt="Logo of FCSA"></a>
-                        <p class="top-bar__logo" data-scroll="#main">ФІІТА</p>
+                    <div class="top-bar__box">
+                        <a href="#" data-scroll="#main" target="_blank" rel="noopener">
+                            <img src="./images/winter-logo.svg" class="logo-icon" width="38" height="38"
+                                alt="Logo of FIITA">
+                        </a>
                     </div>
 
                     <nav class="nav" id="nav">
@@ -242,6 +244,8 @@
             </section>
             <!-- Work -->
             <section class="work">
+                <div class="wrap_sled"> <img src="./images/sled.png" width="54" height="55" class="sled" alt="Sled">
+                </div>
                 <div class="container beveled-container">
                     <div class="work-column__container">
                         <div class="work-column">
@@ -757,6 +761,21 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <script src="script.js"></script>
         <script src="slick.min.js"></script>
+        <script src='snowfall.min.js'></script>
+        <script>
+
+            /* Snowfall */
+            let collectOnMe = document.querySelectorAll('.collectonme'),
+                buttons = document.getElementsByTagName("input");
+
+            for (let i = 0; i < collectOnMe.length; i++) {
+                collectOnMe[i].style.display = "none";
+            }
+
+            snowFall.snow(document.body, { image: "images/flake.png", minSize: 10, maxSize: 32 });
+        //snowFall.snow(document.body); //alternative if picture has problem
+
+        </script>
         <script type="text/javascript" src="vanilla-tilt.js"></script>
 </body>
 

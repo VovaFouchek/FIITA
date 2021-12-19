@@ -72,6 +72,43 @@
 # Work Section
 --------------------------------------------------*/
 
+.wrap_sled {
+  position: absolute;
+  overflow: hidden;
+  width: 100%;
+  height: 54px;
+  top: -52px;
+}
+
+.sled {
+  height: 100%;
+  position: absolute;
+  left: 110px;
+  transition: 2.4s cubic-bezier(0.63, 0.01, 1, 1);
+  cursor: pointer;
+}
+
+.sled.active {
+  left: 2700px;
+}
+
+@media (min-width: 1024px) and (max-width: 1920px) {
+  .sled.active {
+    left: 2050px;
+  }
+}
+
+@media (max-width: 481px) {
+  .sled {
+    left: 35px;
+    transition: 2s cubic-bezier(0.63, 0.01, 1, 1);
+  }
+
+  .sled.active {
+    left: 800px;
+  }
+}
+
 .work {
   background: rgba(25, 24, 37, 1);
   padding: 7% 0 15% 0%;

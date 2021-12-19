@@ -205,7 +205,7 @@
   border-radius: 25px;
   background-color: rgb(255 255 255);
   box-shadow: 0px 24px 45px 2px rgb(80 106 156 / 32%);
-  z-index: 5;
+  z-index: 600;
 }
 
 .menu-social {
