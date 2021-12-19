@@ -221,7 +221,7 @@
 
   .section-title {
     font-weight: 600;
-    font-size: 36px;
+    font-size: 32px;
   }
 
   .header-subtitle {
@@ -340,7 +340,8 @@
   }
 
   .specialties-column__title {
-    max-width: 320px;
+    max-width: 300px;
+    font-size: 25px;
   }
 
   .education-column__subtitle ul {
@@ -430,6 +431,10 @@
   .education-container {
     margin-top: 50px;
   }
+
+  .small-button {
+    border: 3px solid #000000;
+  }
 }
 
 @media (max-width: 375px) {
@@ -439,7 +444,7 @@
   }
 
   .section-title {
-    font-size: 30px;
+    font-size: 22px;
   }
 
   .main-text {
@@ -474,6 +479,13 @@
 
   .specialties-text__main {
     font-size: 16px;
+  }
+
+  .accordion__arrow {
+    width: 19px;
+    height: 19px;
+    border-top: 4px solid #000;
+    border-right: 4px solid #000;
   }
 
   .education-column__title {
