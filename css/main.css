@@ -130,7 +130,6 @@
   max-width: 285px;
   align-items: center;
   list-style-type: none;
-
   position: absolute;
   left: 50%;
   bottom: -80px;
@@ -145,9 +144,10 @@
   border: 0;
   cursor: pointer;
   background: #e2e2e2;
-  margin: 0 7px
+  margin: 0 7px;
 }
-.slick-active button{
+
+.slick-active button {
   width: 17px;
   height: 17px;
   background: #000000;
@@ -175,6 +175,69 @@
 /*-------------------------------------------------
 # specialties Section
 --------------------------------------------------*/
+
+.accordion__item {
+  margin: 5px auto;
+}
+
+.accordion__item .accordion__title {
+  position: relative;
+  display: block;
+  padding: 13px 60px 15px 13px;
+  margin-bottom: 2px;
+  color: #202020;
+  font-size: 28px;
+  text-decoration: none;
+  background-color: #eaeaea;
+  border-radius: 3px;
+  -webkit-transition: background-color 0.2s;
+  transition: background-color 0.2s;
+  cursor: pointer;
+}
+
+.accordion__item .accordion__title:hover {
+  background-color: #e5e4e4;
+  transition: all 0.5s ease-out;
+}
+
+.accordion__item .accordion-active {
+  background-color: #e5e4e4;
+}
+
+.accordion__arrow {
+  content: "";
+  display: block;
+  width: 23px;
+  height: 23px;
+  border-top: 5px solid #000;
+  border-right: 5px solid #000;
+  border-radius: 12%;
+  position: absolute;
+  top: 30%;
+  right: 7px;
+  z-index: 1;
+  transform: translateY(-50%) rotate(135deg);
+  transition: 0.2s linear;
+}
+
+.accordion__rotate {
+  transform: translateY(-50%) rotate(-45deg);
+  margin-top: 5px;
+}
+
+.accordion__item .accordion__content {
+  padding: 30px;
+  margin-bottom: 2px;
+  font-size: 14px;
+  display: none;
+  background-color: #f3f3f3;
+}
+
+.accordion__item .accordion__arrow-item {
+  font-weight: 700;
+}
+/*-------------------------------------*/
+
 .specialties {
   margin-bottom: 200px;
 }
@@ -227,6 +290,7 @@
   margin-top: 15px;
   margin-bottom: 20px;
   padding-right: 15px;
+  position: relative;
 }
 
 .small-button {
@@ -238,10 +302,8 @@
   font-size: 21px;
   line-height: 140%;
   text-align: center;
-}/*
-.specialties-block.first{
-    margin-bottom: 100px;
-}*/
+}
+
 .specialties-text {
   padding-bottom: 120px;
 }

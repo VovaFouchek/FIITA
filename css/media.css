@@ -221,7 +221,8 @@
 
   .section-title {
     font-weight: 600;
-    font-size: 36px;
+    font-size: 32px;
+    line-height: 100%;
   }
 
   .header-subtitle {
@@ -339,6 +340,11 @@
     margin-left: 3px;
   }
 
+  .specialties-column__title {
+    max-width: 300px;
+    font-size: 25px;
+  }
+
   .education-column__subtitle ul {
     padding-left: 9%;
   }
@@ -426,6 +432,10 @@
   .education-container {
     margin-top: 50px;
   }
+
+  .small-button {
+    border: 3px solid #000000;
+  }
 }
 
 @media (max-width: 375px) {
@@ -435,7 +445,7 @@
   }
 
   .section-title {
-    font-size: 32px;
+    font-size: 22px;
   }
 
   .main-text {
@@ -472,11 +482,24 @@
     font-size: 16px;
   }
 
+  .accordion__arrow {
+    width: 19px;
+    height: 19px;
+    border-top: 4px solid #000;
+    border-right: 4px solid #000;
+  }
+
   .education-column__title {
     font-size: 26px;
   }
 
   .footer-box__social {
     width: 40%;
+  }
+}
+
+@media (min-width: 482px) {
+  .accordion__arrow {
+    display: none;
   }
 }
