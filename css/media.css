@@ -339,6 +339,10 @@
     margin-left: 3px;
   }
 
+  .specialties-column__title {
+    max-width: 320px;
+  }
+
   .education-column__subtitle ul {
     padding-left: 9%;
   }
@@ -478,5 +482,11 @@
 
   .footer-box__social {
     width: 40%;
+  }
+}
+
+@media (min-width:482px) {
+  .accordion__arrow {
+    display: none;
   }
 }

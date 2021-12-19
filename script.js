@@ -1,20 +1,22 @@
 
 $(function () {
-    $(document).ready(function () {
-        $('.accordion-list > li > .answer').hide();
 
-        $('.accordion-list > li').click(function () {
-            if ($(this).hasClass("active")) {
-                $(this).removeClass("active").find(".answer").slideUp();
-            } else {
-                $(".accordion-list > li.active .answer").slideUp();
-                $(".accordion-list > li.active").removeClass("active");
-                $(this).addClass("active").find(".answer").slideDown();
-            }
-            return false;
-        });
-
-    });
+    /*
+     $(document).ready(function () {
+         //прикрепляем клик по заголовкам acc-head
+         $('.specialties-wrap').on('click', f_acc);
+     });
+ 
+     function f_acc() {
+         //скрываем все кроме того, что должны открыть
+         $('.specialties-block').not($(this).next()).slideUp(1000);
+         // открываем или скрываем блок под заголовком, по которому кликнули
+         $('html,body').stop().animate({ scrollTop: $(goto).offset().top - 60 }, 500);
+         $(this).next().slideToggle(1000);
+         let goto = $(this).data('anchor');
+         e.preventDefault();
+     }
+ */
 
     $(document).ready(function () {
         $('.slider__company').slick({
@@ -52,6 +54,36 @@ $(function () {
             ]
         });
     });
+
+    /* Accordion specialties */
+    if ($(window).width() < 481) {
+        $('.specialties-block').hide();
+
+        $(".specialties-wrap").on("click", function (e) {
+
+            e.preventDefault();
+            var $this = $(this);
+
+            //  $(this).each(function (index) {
+            //      $(this).removeClass("accordion-active");
+            //  });
+
+            if (!$this.hasClass("accordion-active")) {
+                // $(".specialties-block").slideUp(0);
+                $(this).removeClass("accordion-active");
+                $('.accordion__arrow').removeClass('accordion__rotate');
+                let goto = $(this).data('anchor');
+                $('html,body').stop().animate({ scrollTop: $(goto).offset().top - 60 }, 500);
+                e.preventDefault();
+            }
+
+            $this.toggleClass("accordion-active");
+            $this.next().slideToggle();
+            $('.accordion__arrow', this).toggleClass('accordion__rotate');
+
+
+        });
+    }
 
     /* Hidding menu on scroll*/
     if ($(window).width() > 480) {
