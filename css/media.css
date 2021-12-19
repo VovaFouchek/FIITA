@@ -222,6 +222,7 @@
   .section-title {
     font-weight: 600;
     font-size: 32px;
+    line-height: 100%;
   }
 
   .header-subtitle {
