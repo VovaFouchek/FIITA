@@ -22,6 +22,16 @@
   flex-direction: row;
   justify-content: space-between;
   padding-bottom: 50px;
+  position: relative;
+}
+
+.footer-lower-content span {
+  font-size: 39px;
+  position: absolute;
+  left: -5%;
+  margin: 0;
+  padding: 0;
+  color: #191825;
 }
 
 .footer-box__logo {
