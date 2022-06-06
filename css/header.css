@@ -301,6 +301,14 @@ h1 {
   max-width: 275px;
   margin-top: 49px;
 }
+.Ukraine{
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 110.19%;
+  color: #000000;
+}
 
 /* Optimization*/
 
