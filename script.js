@@ -1,23 +1,6 @@
 
 $(function () {
 
-    /*
-     $(document).ready(function () {
-         //прикрепляем клик по заголовкам acc-head
-         $('.specialties-wrap').on('click', f_acc);
-     });
- 
-     function f_acc() {
-         //скрываем все кроме того, что должны открыть
-         $('.specialties-block').not($(this).next()).slideUp(1000);
-         // открываем или скрываем блок под заголовком, по которому кликнули
-         $('html,body').stop().animate({ scrollTop: $(goto).offset().top - 60 }, 500);
-         $(this).next().slideToggle(1000);
-         let goto = $(this).data('anchor');
-         e.preventDefault();
-     }
- */
-
     $(document).ready(function () {
         $('.slider__company').slick({
             slidesToShow: 6,

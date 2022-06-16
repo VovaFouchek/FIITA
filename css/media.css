@@ -113,6 +113,26 @@
   }
 }
 
+@media (max-width:575px) {
+  .Ukraine{
+    display: block;
+    margin-right: 25px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width:402px) {
+  .Ukraine{
+    font-size: 12px;
+  }
+}
+
+@media (max-width:359px) {
+  .Ukraine{
+    display: none;
+  }
+}
+
 @media (min-width: 769px) and (max-width: 1024px) { /*laptop*/
   .menu {
     padding: 3%;
